@@ -1,0 +1,138 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #09fd11;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 700px;
+    text-align: center;
+}
+
+h1 {
+    color: #f60b0b;
+    font-size: 2em;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    flex: 1 1 45%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #dbcdcd;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #c4b3b3;
+    border-radius: 6px;
+    background: rgba(231, 223, 223, 0.2);
+    color: #504d4d;
+}
+
+button {
+    background-color: #5527df;
+    color: rgb(243, 234, 234);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #681e38;
+}
+
+.visualizer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f5f2f2;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgba(80, 78, 78, 0.1);
+}
+
+.output, .explanation, .steps {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.output h2, .explanation h2, .steps h2 {
+    color: #f5f1f1;
+    font-size: 1.5em;
+    margin-bottom: 0px;
+}
+
+.output p, .explanation p {
+    color: #ddd;
+    font-size: 1.1em;
+}
+
+.steps-container {
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: rgba(105, 101, 101, 0.1);
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+
+.steps-item {
+    margin-bottom: 5px;
+    padding: 5px;
+    color: #fff;
+    font-size: 1em;
+    background-color: rgb(26, 24, 24);
+    border-radius: 5px;
+}
+/* styles.css */
+.element {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: rgb(13, 139, 180);
+    text-align: center;
+    line-height: 30px;
+    transition: transform 0.5s ease;
+}
+
+.compare {
+    background-color: orange;
+}
+
+.swap {
+    background-color: red;
+    transform: translateY(-15px);
+}
+
+.sorted {
+    background-color: green;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithms Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorting Algorithms Visualizer</h1>
+        <div class="controls">
+            <div class="form-group">
+                <label for="algorithm">Choose an Algorithm:</label>
+                <select id="algorithm">
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                    <option value="selection">Selection Sort</option>
+                    <option value="merge">Merge Sort</option>
+                    <option value="quick">Quick Sort</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="inputArray">Enter Array (comma separated):</label>
+                <input type="text" id="inputArray" placeholder="e.g. 64,34,25,12,22,11,90">
+                
+            </div>
+            <button onclick="sortArray()">Sort</button>
+        </div>
+        <div class="visualizer" id="visualizer">
+            <div class="output">
+                <h2>Sorted Array</h2>
+                <p id="output"></p>
+            </div>
+            
+        </div>
+      
+        <div class="explanation">
+            <h2>Explanation:</h2>
+            <p id="explanation"></p>
+        </div>
+        <div class="steps">
+            <h2>Steps:</h2>
+            <div id="steps" class="steps-container"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
